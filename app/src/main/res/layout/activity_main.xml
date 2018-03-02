@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_layout_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.imadeddinelakhbizi.tictactoe_local.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="3pt"
+            android:layout_marginTop="5pt"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="18pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/score_panel_background"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="O"
+                android:inputType="textPersonName"
+                android:paddingLeft="3pt"
+                android:paddingRight="3pt" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="18pt"
+                android:layout_marginLeft="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/score_panel_background"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="X"
+                android:inputType="textPersonName"
+                android:paddingLeft="3pt"
+                android:paddingRight="3pt" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3pt"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_marginRight="3pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_marginRight="3pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3pt"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_marginRight="3pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_marginRight="3pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_marginRight="3pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_marginRight="3pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:background="@color/colorColdYellow"
+                    android:onClick="buClick" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id">
+
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

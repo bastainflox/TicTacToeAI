@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tic Tac Toe (Impossible)</string>
+    <string name="banner_ad_unit_id">banner_ad_unit_id</string>
+    <string name="app_unit_id">app_id</string>
+</resources>
